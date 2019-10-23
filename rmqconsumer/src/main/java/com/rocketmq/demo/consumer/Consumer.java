@@ -54,7 +54,8 @@ public class Consumer {
          * Specify where to start in case the specified consumer group is a brand new one.
          */
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
-        consumer.setConsumeMessageBatchMaxSize(10);//批量获取
+        //批量获取
+        consumer.setConsumeMessageBatchMaxSize(10);
         /*
          * Subscribe one more more topics to consume.
          */
