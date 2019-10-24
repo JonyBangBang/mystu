@@ -58,6 +58,7 @@ public class Consumer {
         consumer.setConsumeMessageBatchMaxSize(10);
         /*
          * Subscribe one more more topics to consume.
+         * 过滤标签
          */
         consumer.subscribe("TopicTest", "*");
 
