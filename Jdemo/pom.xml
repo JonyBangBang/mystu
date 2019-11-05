@@ -11,7 +11,7 @@
     <groupId>com.gn</groupId>
     <artifactId>stu</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>stu</name>
+    <name>Jdemo</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
