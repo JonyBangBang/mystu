@@ -71,7 +71,6 @@ public class Rmb {
                     }else {
                         doubs +=hanzi[num]+danw2[i];
                     }
-
                 }
             }
             if(sb.startsWith("壹拾")){
