@@ -6,7 +6,7 @@ package com.gn.stu.leetcode;
  * @author: gaoning
  * @create: 2019/12/20 16:04
  */
-public class LeetCode {
+public class LeetCode2{
     /**
      * Definition for singly-linked list.
      */
@@ -46,7 +46,7 @@ public class LeetCode {
     }
 
     public static void main(String[] args) {
-        LeetCode test = new LeetCode();
+        LeetCode2 test = new LeetCode2();
         ListNode l1 = new ListNode(1);
         ListNode l12= new ListNode(2);
         ListNode l13 = new ListNode(3);
