@@ -17,6 +17,7 @@ public class HelloController {
     @Autowired
     private HttpServletRequest httpServletRequest;
 
+    private long seq = -1L;
 
     @GetMapping(value = "/hello")
     public String hello() {
@@ -28,5 +29,10 @@ public class HelloController {
     public String world() {
         return "world##ip:" + httpServletRequest.getLocalAddr() + ",port:" + httpServletRequest.getLocalPort()
                 + "\ntime:" + System.currentTimeMillis();
+    }
+
+    @GetMapping(value = "/test")
+    public String test() {
+        return "test##i的值:" + seq-- +" "+ System.currentTimeMillis();
     }
 }
