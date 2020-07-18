@@ -31,8 +31,26 @@ public class HelloController {
                 + "\ntime:" + System.currentTimeMillis();
     }
 
-    @GetMapping(value = "/test")
-    public String test() {
-        return "test##i的值:" + seq-- +" "+ System.currentTimeMillis();
+    @GetMapping(value = "/helloCat")
+    public String catTest(String args){
+        String resString = null;
+//        Transaction t = Cat.newTransaction("URL", "pageName");
+//        try {
+//            Cat.logEvent("URL.Server", "serverIp", Event.SUCCESS, "ip=${serverIp}");
+//            Cat.logMetricForCount("metric.key");
+//            Cat.logMetricForDuration("metric.key", 5);
+//
+//            resString = "hello cat "+args;
+//
+//            t.setStatus(Transaction.SUCCESS);
+//        } catch (Exception e) {
+//            t.setStatus(e);
+//            Cat.logError(e);
+//        } finally {
+//            t.complete();
+//        }
+        resString = "hello cat "+args;
+        return resString;
     }
+
 }
